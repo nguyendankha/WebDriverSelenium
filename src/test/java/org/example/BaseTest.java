@@ -12,12 +12,13 @@ import static org.example.config.ConfigurationManager.configuration;
 public class BaseTest {
     @BeforeSuite
     public void beforeSuite() {
-        AllureManager.setAllureEnvironmentInformation();
+//        AllureManager.setAllureEnvironmentInformation();
     }
 
     @BeforeMethod(alwaysRun = true)
     @Parameters("browser")
     public void preCondition(String browser) {
+        System.out.println("my browser: " + browser);
         WebDriver driver = BrowserFactory.getBrowser(browser);
         DriverManager.setDriver(driver);
         DriverManager.getDriver().get(configuration().baseUrl());

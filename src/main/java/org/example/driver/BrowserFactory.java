@@ -10,8 +10,10 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class BrowserFactory {
     public static WebDriver getBrowser(String browserName) {
+        System.out.println("Browser name: " + browserName.toUpperCase());
         switch (browserName.toUpperCase()) {
             case "CHROME":
+                System.out.println("switch case chrome");
                 return createChromeDriver();
             case "FIREFOX":
                 return createFirefoxDriver();
@@ -26,7 +28,7 @@ public class BrowserFactory {
         chromeOptions.addArguments(BrowserData.START_MAXIMIZED);
         chromeOptions.addArguments(BrowserData.DISABLE_INFO_BARS);
         chromeOptions.addArguments(BrowserData.DISABLE_NOTIFICATION);
-        return new ChromeDriver(chromeOptions);
+        return new ChromeDriver();
     }
 
     private static WebDriver createFirefoxDriver() {

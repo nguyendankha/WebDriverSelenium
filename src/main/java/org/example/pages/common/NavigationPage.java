@@ -1,10 +1,11 @@
 package org.example.pages.common;
 
 import io.qameta.allure.Step;
+import org.example.pages.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class NavigationPage {
+public class NavigationPage extends BasePage {
     @FindBy(name = "next")
     private WebElement next;
 

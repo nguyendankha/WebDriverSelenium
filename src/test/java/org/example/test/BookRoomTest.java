@@ -1,5 +1,6 @@
 package org.example.test;
 
+import org.example.BaseTest;
 import org.example.model.Booking;
 import org.example.model.RoomType;
 import org.example.pages.AccountPage;
@@ -7,7 +8,7 @@ import org.example.pages.BasePage;
 import org.example.pages.RoomPage;
 import org.testng.annotations.Test;
 
-public class BookRoomTest extends BasePage {
+public class BookRoomTest extends BaseTest {
     @Test(description = "Book a room test")
     public void bookARoomTest() {
         RoomType roomType = new RoomType();

@@ -16,14 +16,14 @@ public class AllureManager {
     private AllureManager() {
     }
 
-    public static void setAllureEnvironmentInformation() {
-        HashMap<String, String> basicInfo = new HashMap<>(Map.of(
-                "Test URL", configuration().baseUrl(),
-                "Global timeout", String.valueOf(configuration().timeout()),
-                "Local browser", configuration().browser()
-        ));
-        AllureEnvironmentWriter.allureEnvironmentWriter(ImmutableMap.copyOf(basicInfo));
-    }
+//    public static void setAllureEnvironmentInformation() {
+//        HashMap<String, String> basicInfo = new HashMap<>(Map.of(
+//                "Test URL", configuration().baseUrl(),
+//                "Global timeout", String.valueOf(configuration().timeout()),
+//                "Local browser", configuration().browser()
+//        ));
+//        AllureEnvironmentWriter.allureEnvironmentWriter(ImmutableMap.copyOf(basicInfo));
+//    }
 
     @Attachment(value = "Failed test screenshot", type = "image/png")
     public static byte[] takeScreenshotToAttachOnAllureReport() {

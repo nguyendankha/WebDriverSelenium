@@ -1,0 +1,1 @@
+{"uuid":"944ca278-00f5-4fee-ba7f-9fe8af8cbfb2","name":"Multi browser test","children":["5c66bffd-7a7c-4f84-a70e-947745776c4e"],"befores":[{"name":"beforeSuite","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1688535950160,"stop":1688535950165}],"afters":[],"start":1688535950138,"stop":1688535953839}
